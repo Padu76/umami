@@ -173,7 +173,7 @@ export default {
     defaultLocale,
   },
   basePath,
-  output: 'standalone',
+  // output: 'standalone',
   eslint: {
     ignoreDuringBuilds: true,
   },
