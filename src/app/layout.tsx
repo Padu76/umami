@@ -8,12 +8,15 @@ import '@fontsource/inter/700.css';
 import '@umami/react-zen/styles.css';
 import '@/styles/global.css';
 import '@/styles/variables.css';
+import FounderOSTracker from '@/components/FounderOSTracker';
 
 export default function ({ children }) {
   if (process.env.DISABLE_UI) {
     return (
       <html>
-        <body></body>
+        <body>
+          <FounderOSTracker siteId="umami" />
+        </body>
       </html>
     );
   }
